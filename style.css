@@ -1,0 +1,198 @@
+*{
+    margin:0px;
+    padding:0px;
+    border:none;
+}
+.home nav {
+   
+   margin-left: 700px;
+   margin-top: 60px;
+
+}
+.home nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+   position:relative;
+   
+   gap:20px;
+
+}
+.home nav ul li{
+    font-family: aerial;
+    color:rgb(112, 103, 103)
+
+}
+.home .card{
+    background: rgb(133, 187, 27);
+    padding-top: 30px;
+    opacity:0.8;
+    height:120px;
+    position:relative;
+    top:-100px;
+    
+    
+}
+.home .card h1 {
+    
+    color:white;
+    text-align: center;
+    font-size: 40px;
+}
+.home .card p{
+    color:white;
+    text-align: center;
+    font-size:25px;
+    font-weight: 500;
+}
+.card1 h1
+{
+    text-align: center;
+    font-weight:800 ;
+}
+.card1 p{
+    text-align: center;
+    color:rgb(133, 111, 111);
+}
+.card2{
+    display:flex;
+    flex-direction: row;
+    gap:40px;
+    margin-top:50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+.cardx{
+    display:flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+    gap:20px;
+    width:350px;
+
+}
+.imgholder{
+    display:flex;
+    flex-direction: column;
+    background: rgb(214, 200, 200);
+    padding:10px;
+
+}
+.content p{
+    text-align: justify;
+}
+.card3{
+    display:flex;
+    flex-direction: column;
+    background: rgba(250, 99, 11, 0.918);
+    width:100%;
+    height:80vh;
+    margin-top: 80px;
+
+}
+.cardy h1{
+    text-align: center;
+    padding-top: 50px;
+    color:white;
+    font-weight: 600;
+}
+.cardy p{
+    color:white;
+    font-size: 18px;
+}
+.cardz{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+
+}
+.content2 {
+    width:500px;
+    margin-top:50px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    
+}
+.content2 h5{
+    color:white;
+    font-family: outfit;
+    font-size: 20px;
+}
+.content2 span{
+    color:white;
+    font-size: 18px;
+    font-family: aerial;
+}
+.content2 ul{
+    color:white;
+    font-size:18px ;
+    font-family: aerial;
+}
+.card4{
+     margin-top: 80px;
+
+}
+.content3 p{
+    font-size: 15px;
+    font-family:sans-serif;
+    margin-left:45px;
+    margin-top: 10px;
+
+}
+.content4{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top: 80px;
+    gap:30px;
+    
+}
+.carda h3:hover{
+    color:orange;
+    text-decoration: underline;
+    
+}
+.card5{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    gap:40px;
+    padding:40px;
+    padding-bottom:30px ;
+    flex-wrap: wrap;
+    background: #3a3939;
+    color:#fff;
+    margin-top: 600px;
+    
+
+
+}
+.card5 .cardb{
+    width:250px;
+}
+.card5 .cardb span{
+    margin-top: 60px;
+}
+.card5 .cardb ul{
+    list-style: none;
+}
+.cardc{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #252525;
+    height:60px;
+    width:100%;
+}
+.cardc span{
+    position:relative;
+    left:-400px;
+}
