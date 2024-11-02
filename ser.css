@@ -23,6 +23,9 @@
      color:rgb(112, 103, 103)
  
  }
+ .services nav ul li a{
+   text-decoration: none;
+ }
  .exp1{
     width:100;
     height:18vh;
@@ -110,5 +113,10 @@
     position:relative;
     left:-400px;
  }
- 
+ #main a{
+
+   color:orange;
+   font-weight: 500;
+
+}
  

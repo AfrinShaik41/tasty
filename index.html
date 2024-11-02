@@ -5,22 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .logos
+       {
+           position: absolute;
+           top: -10px;
+           left: 100px;
+           background: limegreen;
+           height: 120px;
+           align-items: center;
+           padding: 20px;
+           padding-top: 30px;
+           clip-path: polygon(0% 0%, 100% 0, 100% 54%, 54% 100%, 0 57%);
+       }
+   </style>
+
 </head>
 <body>
+   <div class="logos">
+       <img src="./img/logo.png" alt="">
+   </div>
     <div class="home">
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>SERVICES</li>
-                <li>GALLERY</li>
-                <li>PRICING</li>
-                <li>CONTACT</li>
+                <li id="main" ><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="ser1.html">SERVICES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="pricing.html">PRICING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
-        <img src="./img/slides/1.jpg" alt="">
+        <img src="./img/slides/1.jpg" id="imgchn">
         <div class="card">
-            <h1>TASTE OF GOODNESS</h1><br>
+            <h1 id="taste">TASTE OF GOODNESS</h1><br>
             <p>Doloribus omnis minus temporibus perferendis ipsa</p>
         </div>
     </div>
@@ -190,11 +208,31 @@
                 <li>Natus error sit voluptatem accusantium doloremque</li>
               </ul>
 
-        </div>
+            </div>
        
      </div>
      <div class="cardc">
         <span>© Bistro Restaurant 2024 All right reserved.</span>
      </div>
+     <script>
+        var imgchn=document.getElementById("imgchn");
+        var taste=document.getElementById("taste");
+        var i=0;
+        function labe()
+        {
+            
+            if(i%2==0){
+           imgchn.src="./img/slides/2.jpg";
+           taste.innerHTML="Best Time-out";
+            }
+            else{
+                imgchn.src="./img/slides/1.jpg";
+                taste.innerHTML="Tast of Goodness";
+
+            }
+            i++;
+        }
+        setInterval(labe,4000);
+     </script>
 </body>
 </html>

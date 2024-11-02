@@ -5,17 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="pricing.css">
+    <style>
+        .logos
+       {
+           position: absolute;
+           top: -10px;
+           left: 100px;
+           background: limegreen;
+           height: 120px;
+           align-items: center;
+           padding: 20px;
+           padding-top: 30px;
+           clip-path: polygon(0% 0%, 100% 0, 100% 54%, 54% 100%, 0 57%);
+       }
+   </style>
+
 </head>
 <body>
+   <div class="logos">
+       <img src="./img/logo.png" alt="">
+   </div>
+
     <div class="pricing">
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>SERVICES</li>
-                <li>GALLERY</li>
-                <li>PRICING</li>
-                <li>CONTACT</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="ser1.html">SERVICES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li id="main"><a href="pricing.html">PRICING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
         <div class="pen">

@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="gallery.css">
+    <style>
+        .logos
+        {
+            position: absolute;
+            top: -10px;
+            left: 100px;
+            background: limegreen;
+            height: 120px;
+            align-items: center;
+            padding: 20px;
+            padding-top: 30px;
+            clip-path: polygon(0% 0%, 100% 0, 100% 54%, 54% 100%, 0 57%);
+        }
+    </style>
 </head>
 <body>
+    <div class="logos">
+        <img src="./img/logo.png" alt="">
+    </div>
     <div class="gallery">
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>SERVICES</li>
-                <li>GALLERY</li>
-                <li>PRICING</li>
-                <li>CONTACT</li>
+                <li ><a href="index.html">HOME</a></li>
+                <li ><a href="aboutus.html">ABOUT US</a></li>
+                <li ><a href="ser1.html">SERVICES</a></li>
+                <li id="main"><a href="gallery.html">GALLERY</a></li>
+                <li><a href="pricing.html">PRICING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
         <div class="book">
@@ -25,14 +42,14 @@
         <div class="gallery1">
             <nav>
                 <ul>
-                    <li id="all">All</li>
-                    <li id="continental">continental</li>
-                    <li id="asian">Asian Food</li>
-                    <li id="italian">Italian Food</li>
+                    <li  onclick="func(1)">All</li>
+                    <li   onclick="func(2)">continental</li>
+                    <li   onclick="func(3)">Asian Food</li>
+                    <li   onclick="func(4)">Italian Food</li>
                 </ul>
             </nav>
         </div>
-        <div class="gallery2" id="all">
+        <div class="gallery2" id="gallery2">
             <div class="book1">
                 <img src="./img/works/1.jpg">
             </div>
@@ -60,7 +77,7 @@
             
 
         </div>
-        <div class="gallery21" id="continental">
+        <div class="gallery21" id="gallery21">
             <div class="book1">
              <img src="./img/works/1.jpg">
             </div>
@@ -74,7 +91,7 @@
                 <img src="./img/works/7.jpg">
                </div>
         </div>
-        <div class="gallery22" id="asian food">
+        <div class="gallery22" id="gallery22">
             <div class="book1">
              <img src="./img/works/2.jpg">
             </div>
@@ -82,7 +99,7 @@
                 <img src="./img/works/6.jpg">
                </div>
         </div>
-        <div class="gallery23" id="italian food">
+        <div class="gallery23" id="gallery23">
             <div class="book1">
              <img src="./img/works/3.jpg">
             </div>
@@ -138,6 +155,43 @@
          <div class="cardc">
             <span>© Bistro Restaurant 2024 All right reserved.</span>
          </div>
+         <script>
+       
+            var all = document.getElementById("gallery2");
+            var continental = document.getElementById("gallery21");
+            var asianfood = document.getElementById("gallery22");
+            var italianfood = document.getElementById("gallery23");
+
+            function func(m) {
+                if (m === 1) {
+                    console.log("1st");
+                    all.style.display = 'block';
+                    continental.style.display = 'none';
+                    asianfood.style.display = 'none';
+                    italianfood.style.display = 'none';
+                } else if (m === 2) {
+                    console.log("2nd");
+                    all.style.display = 'none';
+                    continental.style.display = "flex";
+                    asianfood.style.display = 'none';
+                    italianfood.style.display = 'none';
+                } else if (m === 3) {
+                    all.style.display = 'none';
+                    continental.style.display = 'none';
+                    asianfood.style.display = 'flex';
+                    italianfood.style.display = 'none';
+                } else if (m === 4) {
+                    all.style.display = 'none';
+                    continental.style.display = 'none';
+                    asianfood.style.display = 'none';
+                    italianfood.style.display = 'flex';
+                }
+            }
+
+            // Optional: You could also set up event listeners for the <li> elements here
+        
+
+         </script>
 
 </body>
 </html>

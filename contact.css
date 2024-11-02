@@ -3,13 +3,13 @@
     padding:0px;
     border:none;
 }
-.gallery nav {
+.contact nav {
    
    margin-left: 700px;
    margin-top: 60px;
 
 }
-.gallery nav ul{
+.contact nav ul{
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -18,22 +18,21 @@
    gap:20px;
 
 }
-.gallery nav ul li{
+.contact nav ul li{
     font-family: aerial;
     color:rgb(112, 103, 103)
 
 }
-.gallery nav ul li a{
+.contact nav ul li a{
    text-decoration: none;
 }
-
-.book{
+.pencil{
     width:100;
     height:18vh;
     background: rgb(221, 219, 219);
     margin-top: 50px;
  }
- .book h1{
+ .pencil h1{
     color:yellowgreen;
     font-weight: 600;
     padding-left: 80%;
@@ -42,61 +41,44 @@
     font-family: sans-serif;
     
  }
- .gallery1 nav {
-   
-    
-    margin-top: 30px;
-    margin-left: 110px;
- 
- }
- .gallery1 nav ul{
-     display: flex;
-     flex-direction: row;
-     list-style: none;
-    position:relative;
-    
-    gap:20px;
- 
- }
- .gallery1 nav ul li{
-     font-family: aerial;
-     color:rgb(11, 156, 11);
-     border:1px  solid rgb(17, 179, 17);
-     padding:8px 10px;
- 
- }
- .gallery2, .gallery21, .gallery22, .gallery23{
-    width:88%;
-    margin:auto;
+ .contactForm form{
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:30px;
-    margin-top: 40px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 20px;
+    gap:20px;
+ }
+ .contactForm form label{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+ }
+ .contactForm form label span{
+    font-weight: 600;
+ }
+ .contactForm form label input{
+    border:1px solid rgb(219, 216, 216);
+    max-width: 500px;
+    padding:10px;
+    border-radius: 10px;
+    outline-color: blue;
+ }
+ #msg{
+    border:1px solid rgb(219, 216, 216);
+    max-width: 500px;
+    padding:10px;
+    height:20vh;
+    border-radius: 10px;
 
  }
- .gallery2 .book1 img, .gallery21 .book1 img, .gallery22 .book1 img, .gallery23 .book1 img{
-    height:200px;
-    width:250px;
-    border:6px solid rgb(221, 213, 213);
+ .contactForm form button{
+    width:fit-content;
+    padding:20px 40px;
+    background: rgb(250, 130, 86);
+    color:white;
+    font-size: 16px;
+    font-weight: 500;
  }
- 
- .gallery21{
-    display: none;
- }
- .gallery22{
-    display:none;
- }
-
- .gallery23
-{
-   display:none;
-
-}
-
-
  .card5{
     display:flex;
     flex-direction: row;
@@ -136,10 +118,12 @@
     position:relative;
     left:-400px;
  }
+ 
+ 
+  
  #main a{
 
    color:orange;
    font-weight: 500;
 
 }
- 
